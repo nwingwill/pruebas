@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>secondApp</title>
+</head>
+<body ng-app>
+    <script src="lib/angular.js"></script>
+    <script>
+        function  miCtrl($scope) {
+            $scope.mensaje='Mensaje desde el controlador';
+        }
+    </script>
+    <div class="container" ng-controller="miCtrl">
+        <h1>{{mensaje}}</h1>
+    </div>
+</body>
+</html>
